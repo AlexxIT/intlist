@@ -7,11 +7,13 @@
 Используется алфавит URI Unreserved Characters - 64 символа, позволяющих
 закодировать по 6 байт: https://en.wikipedia.org/wiki/Percent-encoding
 
-> Байт  Бит  Шаблон полностью
-> 1     5    --0xxxxx (2^5 = 32)
-> 2     10   --10xxxx --xxxxxx (2^10 = 1024)
-> 3     15   --110xxx --xxxxxx --xxxxxx (2^15 = 32768)
-> 4     20   --1110xx --xxxxxx --xxxxxx --xxxxxx  (2^20 = 1048576)
+```
+Байт  Бит  Шаблон полностью
+1     5    --0xxxxx (2^5 = 32)
+2     10   --10xxxx --xxxxxx (2^10 = 1024)
+3     15   --110xxx --xxxxxx --xxxxxx (2^15 = 32768)
+4     20   --1110xx --xxxxxx --xxxxxx --xxxxxx  (2^20 = 1048576)
+```
 
 Можно доработать до поддержки 2^35.
 
